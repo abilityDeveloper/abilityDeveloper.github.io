@@ -2,7 +2,8 @@
   "dependencies": {
     "firebase": "^9.15.0",
     "firebaseui": "^6.0.2",
-    "jquery": "^3.6.2"
+    "jquery": "npm:jQuery@^1.7.4",
+    "jQuery": "^1.7.4"
   },
   "name": "my-webpack-project",
   "description": "My webpack project",

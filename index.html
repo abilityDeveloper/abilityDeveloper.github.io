@@ -3,8 +3,71 @@
     <head>
         <meta charset="utf-8" />
         <title>Webpack App</title>
-        <link rel="stylesheet" type="text/css" href="./src/css/base.css">
-        <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+        <style>
+            body{
+                display: grid;
+                height: 99vh;
+                grid-template-rows: auto 1fr auto;
+            }
+            header{
+                grid-row: 1;
+            }
+            #bodyContainer{
+                grid-row: 2;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                align-content: center;
+            }
+            footer{
+                grid-row: 3;
+            }
+
+            /*Sign up Styling*/
+            #signup{
+                display: none;
+                grid-row: 2;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #signupForm{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+            }
+            #signupOption{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .signupInput{
+                margin: 0.5rem;
+            }
+            
+
+
+            /*Sign In Styling*/
+            #signin{
+                display: inline-block;
+                grid-row: 2;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center;
+            }
+            #signinForm{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-evenly;
+            }
+            #signinOption{
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .signinInput{
+                margin: 0.5rem;
+            }
+        </style>
+
     </head>
     <header>
         <div>
@@ -14,27 +77,36 @@
     
     <body>
         <div id="bodyContainer">
+            <!-- Sign up Form -->
             <div id="signup">
-                <link rel="stylesheet" type="text/css" href="./src/css/signup.css">
                 <h1>Sign Up Form</h1>
-                    <form id="signupForm">
-                        <input type="email" id="signupEmail"> <br>
-                        <input type="password" id="signupPassword"><br>
-                        <input type="button" value="submit" id="signupSubmit"><br>
-                        
-                    </form>
+                <form id="signupForm">
+                        <input class="signupInput" type="email" id="signupEmail"> <br>
+                        <input class="signupInput" type="password" id="signupPassword"><br>
+                        <input class="signupInput" type="button" value="submit" id="signupSubmit"><br>
+                </form>
+                <br>
+                <div id="signupOption">
+                    <label for="haveAccount">Already have an Account? Login!</label> <br>
+                    <input type="button" id="haveAccount" name="createAccount" value="Loginto Account">
+                </div>
             </div>
+
+            <!-- Sign In Form -->
             <div id="signin">
-                <link rel="stylesheet" type="text/css" href="./src/css/signin.css">
                 <h1>Sign in Form</h1>
-                    <form id="signinForm">
-                        <input type="email" id="signinEmail"> <br>
-                        <input type="password" id="signinPassword"><br>
-                        <input type="button" value="submit" id="signinSubmit"><br>
-                        
-                    </form>
+                <form id="signinForm">
+                        <input class="signinInput" type="email" id="signinEmail"> <br>
+                        <input class="signinInput" type="password" id="signinPassword"><br>
+                        <input class="signinInput" type="button" value="submit" id="signinSubmit"><br>
+                </form>
+                <br>
+                <div id="signinOption">
+                    <label for="createAccount">Don't have an account? Sign up!</label> <br>
+                    <input type="button" id="createAccount" name="createAccount" value="Create an Account">
+                </div>
             </div>
-            <div id="container"></div>
+            <div id="statusContainer"></div>
         </div>
     </body>
     <footer>

@@ -1,5 +1,9 @@
 #signup{
-    margin: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2;
+
 }
 
 #signupForm{
