@@ -1,20 +1,3 @@
-# 🚀 Welcome to your new awesome project!
-
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
-
-```
 1.a | To run this applet, change the directory location to the root folder of the applet 
 
 EXAMPLE: cd C:/Users/user/desktop/webapp-template
