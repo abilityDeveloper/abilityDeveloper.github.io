@@ -1,0 +1,9 @@
+#signup{
+    margin: auto;
+}
+
+#signupForm{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}

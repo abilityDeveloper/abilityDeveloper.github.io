@@ -1,0 +1,17 @@
+body{
+    display: grid;
+    height: 99vh;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    grid-row: 1;
+}
+#bodyContainer{
+    grid-row: 2;
+    display: flex;
+}
+footer{
+    grid-row: 3;
+}
+
+/**/
